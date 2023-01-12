@@ -10,3 +10,4 @@ RUN curl https://dl.bintray.com/rabbitmq/community-plugins/3.7.x/rabbitmq_delaye
     && rm $RABBITMQ_HOME/plugins/rabbitmq_delayed_message_exchange-20171201-3.7.x.zip
 
 RUN rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
+RUN rabbitmq-plugins enable rabbitmq_consistent_hash_exchange rabbitmq_shovel rabbitmq_shovel_management
